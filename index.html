@@ -133,24 +133,28 @@
             background-color: var(--accent-color);
             animation: blink 0.7s infinite;
         }
+
+
 .sketchfab-embed-wrapper {
     width: 60%; /* Occupies 60% of the screen width */
-    height: 60%; /* Occupies 60% of the screen height */
+    height: 90vh; /* Occupies 90% of the viewport height */
     display: flex;
     flex-direction: column; /* Stacks the iframe and title vertically */
     justify-content: center;
     align-items: center;
     background-color: transparent; /* Makes the wrapper background transparent */
     border: none; /* Removes any border if present */
-    box-shadow: none; /* Removes shadow for full transparency */
-    padding: 1rem; /* Optional: Padding for internal spacing */
+    padding: 0; /* Removes padding for full iframe size */
     box-sizing: border-box;
 }
+
 iframe {
     width: 100%; /* Make iframe fill the parent div's width */
-    height: 90%; /* Allocate most of the height to the iframe */
+    height: 100%; /* Make iframe fill the parent div's height */
     border: none; /* Removes default border */
 }
+
+
 
 
 

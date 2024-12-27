@@ -133,6 +133,26 @@
             background-color: var(--accent-color);
             animation: blink 0.7s infinite;
         }
+.sketchfab-embed-wrapper {
+    width: 60%; /* Occupies 60% of the screen width */
+    height: 60%; /* Occupies 60% of the screen height */
+    display: flex;
+    flex-direction: column; /* Stacks the iframe and title vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Makes the wrapper background transparent */
+    border: none; /* Removes any border if present */
+    box-shadow: none; /* Removes shadow for full transparency */
+    padding: 1rem; /* Optional: Padding for internal spacing */
+    box-sizing: border-box;
+}
+iframe {
+    width: 100%; /* Make iframe fill the parent div's width */
+    height: 90%; /* Allocate most of the height to the iframe */
+    border: none; /* Removes default border */
+}
+
+
 
         /* Styling for images in the Getting Started section */
         .getting-started-img {
@@ -189,10 +209,21 @@
 
     <!-- Home Section -->
     <section id="home" class="logo-section">
-        <div class="logo-container">
-            <img src="https://memer.studio/media/usermedia/0672f05f-57e5-4b62-a98b-a71ddd24c14d.png" alt="Coin mascot character" class="logo-image">
-            <div class="logo-text"> <h1 id="title" class="type-text" style="visibility: visible; opacity: 1;">DonkeyGPT ($DNKGPT)<span class="cursor"></span></h1></div>
-        </div>
+        
+        <div class="sketchfab-embed-wrapper">
+    <iframe title="Mobile - Pocket Shrek - Donkey" frameborder="0" 
+            allowfullscreen mozallowfullscreen="true" 
+            webkitallowfullscreen="true" 
+            allow="autoplay; fullscreen; xr-spatial-tracking" 
+            xr-spatial-tracking execution-while-out-of-viewport 
+            execution-while-not-rendered web-share 
+            src="https://sketchfab.com/models/3a81d8737c5f4d9da37b072676be6a3a/embed?autospin=1&transparent=1">
+    </iframe>
+    <h1 id="title" class="type-text" style="visibility: visible; opacity: 1;">
+        DonkeyGPT ($DNKGPT)<span class="cursor"></span>
+    </h1>
+</div>
+
         <div class="scroll-indicator">
             <i class="fas fa-chevron-down"></i>
         </div>
